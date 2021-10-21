@@ -56,7 +56,28 @@ CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=ResNet50-standard --train --mu
 
 ### Test
 
+Using a pre-trained model:
+
+ResNet101 trained with CutMix, AutoAugment and AgMax:
+```
+mkdir checkpoint
+cd checkpoint
+wget https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-agmax-mi-ResNet101-cutmix-auto_augment-81.19-mlp-4096.pth
+cd ..
+python3 main.py --config=ResNet101-auto_augment-cutmix-agmax --eval \
+--dataset=imagenet --resume imagenet-agmax-mi-ResNet101-cutmix-auto_augment-81.19-mlp-4096.pth
+```
+
+## Citation
+If you find this work useful, please cite:
 
 ```
+@inproceedings{atienza2022agmax,
+  title={Improving Model Generalization by Agreement of Learned Representations from Data Augmentation},
+  author={Atienza, Rowel},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision},
+  year={2022},
+  pubstate={published},
+  tppubtype={inproceedings}
+}
 ```
-
