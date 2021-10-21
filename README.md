@@ -8,7 +8,7 @@ When data augmentation is applied on an input image, a model is forced to learn 
 <img src="https://github.com/roatienza/agmax/blob/master/figures/fig1_agmax.png" width="50%" height="50%">
 
 
-Since data augmentation incurs little overhead, why not generate 2 data augmented images from a given input. Then, force the model to agree on the correct label (Figure 2). It turns that maximizing this agreement further improves model model generalization. We call our method AgMax.
+Since data augmentation incurs little overhead, why not generate 2 data augmented images (also known as 2 positive samples) from a given input. Then, force the model to agree on the correct label (Figure 2). It turns that maximizing this agreement further improves model model generalization. We call our method *AgMax*.
 
 
 <img src="https://github.com/roatienza/agmax/blob/master/figures/fig2_agmax.png" width="50%" height="50%">
@@ -20,7 +20,7 @@ Unlike label smoothing, AgMax consistently improves model accuracy. For example 
 | :------------ | :-------------: | :-------------: | :-------------: |
 | Standard | 76.4 | 76.8 | 76.9 | 
 | CutOut | 76.2 | 76.5 | 77.1 |
-| MixUp | 76.5 | 76.7| 77.6 |
+| MixUp | 76.5 | 76.7| **77.6**  |
 | CutMix | 76.3 | 76.4 | 77.4 |
 | AutoAugment (AA) | 76.2 | 76.2 | 77.1 |
 | CutOut+AA | 75.7 | 75.7 | 76.6 |
