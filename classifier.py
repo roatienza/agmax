@@ -1,5 +1,11 @@
 '''
+This file includes:
+    1) Model building, loading and evaluation
+    2) Data augmentation and dataloaders preparation
 
+With and without AgMax are both supported. 
+
+Copyright 2021 Rowel Atienza
 '''
 
 
@@ -19,6 +25,8 @@ from timm.loss import LabelSmoothingCrossEntropy
 from timm.scheduler import StepLRScheduler, CosineLRScheduler
 
 import datetime
+from urllib.parse import urlparse
+import validators
 import numpy as np
 import os
 import math
@@ -819,7 +827,13 @@ def build_train(args, run, all_top1):
     if args.resume:
         folder = args.checkpoints_dir
         os.makedirs(folder, exist_ok=True)
-        path = os.path.join(folder, args.resume)
+        if validators.url(args.resume):
+            path = urlparse(args.resume)[2]
+            path = os.path.split(path)[-1]
+            path = os.path.join(folder, path)
+            torch.hub.download_url_to_file(args.resume, path)
+        else:
+            path = os.path.join(folder, args.resume)
         print("Resuming from checkpoint '%s'" % path)
         checkpoint = torch.load(path)
         classifier.model.load_state_dict(checkpoint['model_state_dict'])

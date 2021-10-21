@@ -1,7 +1,8 @@
 '''
-Model training 
-See samples in scripts/
+Main entry point for model training and evaluation. 
+See samples in scripts on how to train models from scratch.
 
+Copyright 2021 Rowel Atienza
 '''
 
 from __future__ import absolute_import

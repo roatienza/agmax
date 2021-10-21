@@ -1,5 +1,23 @@
 '''
+Several backbone networks are supported:
+    1) WideResNet
+    2) ResNet50/101
+    3) EfficientNet
+    4) VGG
+    5) LeNet
+    6) RegNet
 
+Under features folder, the different backbone models can be found.
+I started using the model implementation. 
+Eventually (EfficientNet and RegNet), I found it easier to load the backbone using timm modules.
+
+Can be easily expanded to support other models. 
+1) Under features folder, add the backbone class. You might need to print the 
+model summary to determine the number of units before the last Linear layer.
+2) Edit the get_backbone() function to support the new model.
+3) Edit the config files to support your new model.
+
+Copyright 2021 Rowel Atienza
 '''
 
 from __future__ import absolute_import

@@ -1,4 +1,8 @@
 '''
+A single dataloader is the typical one input - one label mapping. This is the classical supervised learning.
+A double dataloader creates 2 data points for the same label and used in training with AgMax.
+
+Copyright 2021 Rowel Atienza
 '''
 
 from __future__ import absolute_import
