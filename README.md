@@ -37,3 +37,26 @@ Soon.
 ```
 pip3 install -r requirements.txt
 ```
+
+### Train
+
+For example, train ResNet50 with Agmax on 2 GPUs for 90 epochs, SGD with `lr=0.1` and multistep learning rate:
+
+```
+CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=ResNet50-standard-agmax --train --multisteplr \
+--dataset=imagenet --epochs=90 --save
+```
+
+Compare the results without Agmax:
+
+```
+CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=ResNet50-standard --train --multisteplr \
+--dataset=imagenet --epochs=90 --save
+```
+
+### Test
+
+
+```
+```
+
