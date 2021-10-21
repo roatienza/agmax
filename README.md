@@ -5,12 +5,15 @@
 
 When data augmentation is applied on an input image, a model is forced to learn the correct label to improve model generalization (Figure 1). 
 
-
+<img src="https://github.com/roatienza/agmax/blob/master/figures/fig1_agmax.png" width="50%" height="50%">
 
 
 Since data augmentation incurs little overhead, why not generate 2 data augmented images from a given input. Then, force the model to agree on the correct label (Figure 2). It turns that maximizing this agreement further improves model model generalization. We call our method AgMax.
 
-Unlike label smoothing, consistently improves model accuracy. For example on ImageNet1k for 90 epochs, ResNet50 performance is as follows:
+
+<img src="https://github.com/roatienza/agmax/blob/master/figures/fig2_agmax.png" width="50%" height="50%">
+
+Unlike label smoothing, AgMax consistently improves model accuracy. For example on ImageNet1k for 90 epochs, the ResNet50 performance is as follows:
 
 
 | Data Augmentation | Baseline | Label Smoothing | AgMax (Ours) |
