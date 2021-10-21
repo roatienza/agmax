@@ -9,8 +9,14 @@ matplotlib
 scikit-image
 librosa
 timm==0.4.12
+
+
 # sudo apt-get install libsndfile-dev
 sndfile
+
+
+# To support object detection and segmentation
+
 # https://mmdetection.readthedocs.io/en/latest/get_started.html
 # (MacOS) 
 # git clone https://github.com/open-mmlab/mmcv.git
@@ -18,7 +24,7 @@ sndfile
 # MMCV_WITH_OPS=1 python3 -m pip install -e .
 
 # Ubuntu 
-pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
+#pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 
 # 
 # mmdet-2.14.0
@@ -28,4 +34,4 @@ pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8
 # pip3 install -v -e . 
 
 # To use COCO datatset
-pip3 install git+https://github.com/waleedka/coco.git#subdirectory=PythonAPI
+#pip3 install git+https://github.com/waleedka/coco.git#subdirectory=PythonAPI
