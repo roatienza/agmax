@@ -27,6 +27,9 @@ Unlike label smoothing, AgMax consistently improves model accuracy. For example 
 | MixUp+AA | 75.9 | 76.5 | 77.1 |
 | CutMix+AA | 75.5 | 75.5 | 77.0 |
 
+The figure below demonstrates consistent improvement across different data augmnentation methods:
+
+<img src="https://github.com/roatienza/agmax/blob/master/figures/ImageNet_ResNet50_90_epochs_Top-1.png" width="50%" height="50%">
 
 ### Paper
 
