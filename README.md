@@ -43,14 +43,14 @@ pip3 install -r requirements.txt
 
 ### Train
 
-For example, train ResNet50 with Agmax on 2 GPUs for 90 epochs, SGD with `lr=0.1` and multistep learning rate:
+For example, train ResNet50 with AgMax on 2 GPUs for 90 epochs, SGD with `lr=0.1` and multistep learning rate:
 
 ```
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=ResNet50-standard-agmax --train --multisteplr \
 --dataset=imagenet --epochs=90 --save
 ```
 
-Compare the results without Agmax:
+Compare the results without AgMax:
 
 ```
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --config=ResNet50-standard --train --multisteplr \
@@ -70,6 +70,18 @@ cd ..
 python3 main.py --config=ResNet101-auto_augment-cutmix-agmax --eval \
 --dataset=imagenet --resume imagenet-agmax-mi-ResNet101-cutmix-auto_augment-81.19-mlp-4096.pth
 ```
+
+ResNet50 trained with CutMix, AutoAugment and AgMax:
+
+```
+python3 main.py --config=ResNet50-auto_augment-cutmix-agmax --eval --n-units=2048 \
+--dataset=imagenet --resume imagenet-agmax-ResNet50-cutmix-auto_augment-79.12-mlp-2048.pth
+```
+
+Other pre-trained models (Baselines):
+
+[ResNet101 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet101-cutmix-auto_augment-80.69.pth)
+[ResNet50 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet50-cutmix-auto_augment-78.5.pth)
 
 ## Citation
 If you find this work useful, please cite:
