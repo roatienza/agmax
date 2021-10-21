@@ -80,8 +80,8 @@ python3 main.py --config=ResNet50-auto_augment-cutmix-agmax --eval --n-units=204
 
 Other pre-trained models (Baselines):
 
-[ResNet101 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet101-cutmix-auto_augment-80.69.pth)
-[ResNet50 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet50-cutmix-auto_augment-78.5.pth)
+- [ResNet101 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet101-cutmix-auto_augment-80.69.pth)
+- [ResNet50 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet50-cutmix-auto_augment-78.5.pth)
 
 ## Citation
 If you find this work useful, please cite:
