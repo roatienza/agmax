@@ -3,12 +3,12 @@
 
 ## Why it matters?
 
-When data augmentation is applied on an input image, a model is forced to learn the correct label to improve model generalization (Figure 1). 
+When data augmentation is applied on an input image, a model is forced to learn invariant features to improve model generalization (Figure 1). 
 
 <img src="https://github.com/roatienza/agmax/blob/master/figures/fig1_agmax.png" width="50%" height="50%">
 
 
-Since data augmentation incurs little overhead, why not generate 2 data augmented images (also known as 2 positive samples) from a given input. Then, force the model to agree on the correct label (Figure 2). It turns that maximizing this agreement further improves model model generalization. We call our method *AgMax*.
+Since data augmentation incurs little overhead, why not generate 2 data augmented images (also known as 2 positive samples) from a given input. Then, force the model to agree on the correct label (Figure 2). It turns out that maximizing this agreement further improves model model generalization. We call our method *AgMax*.
 
 
 <img src="https://github.com/roatienza/agmax/blob/master/figures/fig2_agmax.png" width="50%" height="50%">
