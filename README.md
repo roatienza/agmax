@@ -63,8 +63,8 @@ Using a pre-trained model:
 
 ResNet101 trained with CutMix, AutoAugment and AgMax:
 ```
-mkdir checkpoint
-cd checkpoint
+mkdir checkpoints
+cd checkpoints
 wget https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-agmax-mi-ResNet101-cutmix-auto_augment-81.19-mlp-4096.pth
 cd ..
 python3 main.py --config=ResNet101-auto_augment-cutmix-agmax --eval \
