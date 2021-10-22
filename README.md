@@ -1,5 +1,8 @@
 # Improving Model Generalization by Agreement of Learned Representations from Data Augmentation (WACV 2022)
 
+### Paper
+
+[ArXiv](https://arxiv.org/abs/2110.10536)
 
 ## Why it matters?
 
@@ -31,9 +34,7 @@ The figure below demonstrates consistent improvement across different data augmn
 
 <img src="https://github.com/roatienza/agmax/blob/master/figures/ImageNet_ResNet50_90_epochs_Top-1.png" width="50%" height="50%">
 
-### Paper
 
-Soon.
 
 ### Install requirements
 
