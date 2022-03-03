@@ -2,7 +2,9 @@
 
 ### Paper
 
+[WACV2022](https://openaccess.thecvf.com/content/WACV2022/papers/Atienza_Improving_Model_Generalization_by_Agreement_of_Learned_Representations_From_Data_WACV_2022_paper.pdf)
 [ArXiv](https://arxiv.org/abs/2110.10536)
+
 
 ## Why it matters?
 
@@ -89,12 +91,12 @@ Other pre-trained models (Baselines):
 If you find this work useful, please cite:
 
 ```
-@inproceedings{atienza2022agmax,
+@inproceedings{atienza2022improving,
   title={Improving Model Generalization by Agreement of Learned Representations from Data Augmentation},
   author={Atienza, Rowel},
-  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision},
-  year={2022},
-  pubstate={published},
-  tppubtype={inproceedings}
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={372--381},
+  year={2022}
 }
+
 ```
