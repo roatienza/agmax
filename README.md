@@ -1,9 +1,9 @@
-# Improving Model Generalization by Agreement of Learned Representations from Data Augmentation (WACV 2022)
+# Improving Model Generalization by Agreement of Learned Representations from Data Augmentation
 
 ### Paper
 
-[WACV2022](https://openaccess.thecvf.com/content/WACV2022/papers/Atienza_Improving_Model_Generalization_by_Agreement_of_Learned_Representations_From_Data_WACV_2022_paper.pdf)
-[ArXiv](https://arxiv.org/abs/2110.10536)
+* [WACV 2022](https://openaccess.thecvf.com/content/WACV2022/papers/Atienza_Improving_Model_Generalization_by_Agreement_of_Learned_Representations_From_Data_WACV_2022_paper.pdf)
+* [ArXiv](https://arxiv.org/abs/2110.10536)
 
 
 ## Why it matters?
