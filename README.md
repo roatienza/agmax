@@ -98,5 +98,4 @@ If you find this work useful, please cite:
   pages={372--381},
   year={2022}
 }
-
 ```
