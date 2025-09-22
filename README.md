@@ -87,6 +87,10 @@ Other pre-trained models (Baselines):
 - [ResNet101 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet101-cutmix-auto_augment-80.69.pth)
 - [ResNet50 Cutmix+AutoAugment](https://github.com/roatienza/agmax/releases/download/agmax-0.1.0/imagenet-standard-ResNet50-cutmix-auto_augment-78.5.pth)
 
+Related Work
+
+= [Mutual Information Neural Estimation](https://github.com/gtegner/mine-pytorch)
+
 ## Citation
 If you find this work useful, please cite:
 
