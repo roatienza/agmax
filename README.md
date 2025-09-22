@@ -89,7 +89,7 @@ Other pre-trained models (Baselines):
 
 Related Work
 
-= [Mutual Information Neural Estimation](https://github.com/gtegner/mine-pytorch)
+- [Mutual Information Neural Estimation](https://github.com/gtegner/mine-pytorch)
 
 ## Citation
 If you find this work useful, please cite:
